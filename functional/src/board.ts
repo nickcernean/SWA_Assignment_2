@@ -136,6 +136,7 @@ function createMatchEvent<T>(match: Match<T>): Effect<T> {
 function createRefillEvent<T>(): Effect<T> {
     return {
         kind: "Refill",
+        match: null
     };
 }
 
